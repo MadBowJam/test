@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding:  0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#drawingcontainer {
+	width: 800px;
+	margin: 0px auto;
+}
+
+#drawingcontainer div {
+	padding: 15px;
+	line-height: 30px;
+}
+
+#drawingcontainer .text {
+	text-align: center;
+	width: 100%;
+	font-size: 50px;
+	padding: 40px 0;
+}
+
+#options {
+	float: left;
+}
+
+#options input[type=submit] {
+	border: 0;
+	/* margin-right: 10px; */
+	width: 35px;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+	height: 35px;
+	position: relative;
+	cursor: pointer;
+}
+
+#options input[type=submit]:hover {
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#options input[type=submit]:active {
+	top: 2px;
+}
+
+.purple { background: #871de0; }
+.pink { background: #eb159d; }
+.red { background: #c92626; }
+.orange { background: #db551b; }
+.yellow { background: #ddc41e; }
+.green { background: #76b80f; }
+.blue { background: #1974b4; }
+.black { background: #000; }
+.white { background: #fff; }
+
+#shapes {
+	float: left;
+}
+
+#shapes input[type=submit] {
+	/* margin-right: 10px; */
+	width: 40px;
+	height: 40px;
+	position: relative;
+	cursor: pointer;
+	background:white;
+	border: 2px solid black;
+	font-size: 8px;
+}
+
+#shapes input[type=submit]:hover {
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#shapes input[type=submit]:active {
+	top: 2px;
+}
+
+.circle
+{
+	border-radius: 18px; 
+}
+
+canvas {
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+	clear:both;
+	background: #fff;
+	border-radius: 0px;
+	display: block;
+}
+
+/* reference for css styling 
+http://www.inserthtml.com/2012/05/html5-canvas-interactivity/
+*/
+
+
+.square.medium {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.square.small {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.line {
+    height: 5px !important;
+    width: 60px !important;
+    border: none !important;
+    background-color: #000 !important;
+}
+
+
+.image.first {
+    width: 60px !important;
+    background: url("images/image1.jpg") no-repeat !important;
+    background-size: cover !important;
+}
+
+.image.second {
+    width: 60px !important;
+    background: url("images/image2.jpg") no-repeat !important;
+    background-size: cover !important;
+}
+
+.image.third {
+    width: 60px !important;
+    background: url("images/image3.jpg") no-repeat !important;
+    background-size: cover!important;
+}
+
+#options, #shapes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0 !important;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.circle.medium {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.circle.small {
+    width: 20px !important;
+    height: 20px !important;
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple Drawing App</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div id="drawingcontainer">
+	<div class="text">
+		JavaScript Drawing
+	</div>
+    <!-- this contains the various color choices -->
+	<div id="options">
+		<input type="submit" onclick="setColor('#871de0');" class="purple" value="" />
+		<input type="submit" onclick="setColor('#eb159d');" class="pink" value="" />
+		<input type="submit" onclick="setColor('#c92626');" class="red" value="" />
+		<input type="submit" onclick="setColor('#db551b');" class="orange" value="" />
+		<input type="submit" onclick="setColor('#ddc41e');" class="yellow" value="" />
+		<input type="submit" onclick="setColor('#76b80f');" class="green" value="" />
+		<input type="submit" onclick="setColor('#1974b4');" class="blue" value="" />
+		<input type="submit" onclick="setColor('#000');" class="black" value="" />
+		<!-- <input type="submit" onclick="setColor('#FFF');" class="white" value="" /> -->
+        
+	</div>
+    <!-- this contains the various color choices -->
+    
+	<div id = "shapes">
+        <input type="submit" onclick="setShape('squareBig');" class="square big" value="" />
+        <input type="submit" onclick="setShape('squareMedium');" class="square medium" value="" />
+        <input type="submit" onclick="setShape('squareSmall');" class="square small" value="" />
+        <input type="submit" onclick="setShape('circleBig');" class="circle big" value="" />
+        <input type="submit" onclick="setShape('circleMedium');" class="circle medium" value="" />
+        <input type="submit" onclick="setShape('circleSmall');" class="circle small" value="" />
+        <input type="submit" onclick="setShape('straightLine');" class="line" value="" />
+        <input type="submit" onclick="setShape('image1');" class="image first" value="" />
+        <input type="submit" onclick="setShape('image2');" class="image second" value="" />
+        <input type="submit" onclick="setShape('image3');" class="image third" value="" />
+
+        <div style="display:none;">
+            <img id="source" src="images/image1.jpg"/>
+            <img id="source" src="images/image2.jpg"/>
+            <img id="source" src="images/image3.jpg"/>
+        </div>
+    </div>
+    
+	<canvas width="800" height="400" id="drawing">
+	Your browser doesn't support canvas
+	</canvas>
+    
+    <div id = "info">
+    	<p>Instructions: Hold the mouse down to draw. Click on the color swatches to change color. Click on the shapes to change drawing shapes. 
+            <br>
+            For drawind line, choose line in top panel, and click 2 times (first click is starting point, second click is end point)
+            <br>
+            For drawind image, choose image in top panel, and click on place where you want to place it
+        <p>
+      
+         <!-- put your assignment information here -->
+   		 <p>Assignment 2: Interactive Canvas App, 
+         Name: your name here   ID: your id here </p>
+    </div>
+    
+</div>
+<script src="raf.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
